@@ -1,0 +1,607 @@
+$navHeight: 100px;
+$font14: 14px;
+  p {
+      margin: 0;
+  }
+  ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+ .home_nav {
+    height: $navHeight;
+    background-color: #0c0c0c;
+    border-bottom: 1px solid #1f1f1f;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .nav-wrapper{
+    width: 1220px;
+    margin: 0 auto;
+  }
+  .logo {
+    height: 50px;
+    width: 160px;
+    background: url('../assest/logo.png') no-repeat center left;
+    background-size: contain;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .nav_right{
+    float: right;
+    white-space: nowrap;
+  }
+  // .nav_link, .lang_wrapper{
+  //     display: inline-block;
+  //     vertical-align: middle;
+  // }
+  // .nav_link {
+  //   color: #c8c8c8;
+  //   font-size: $font14;
+  // }
+  // .nav_link li {
+  //   height: $navHeight;
+  //   line-height: $navHeight;
+  //   min-width: 40px;
+  //   display: inline-block;
+  //   cursor: pointer;
+  //   &:not(:last-child){
+  //     margin-right: 46px;
+  //   }
+  //   &:hover {
+  //     color: #fff;
+  //     font-weight: bold;  
+  //     border-bottom: 2px solid #5b83de;
+  //   }
+  // }
+
+  .first_scrren {
+    width: 100%;
+    margin-top: $navHeight;
+    text-align: center;
+    height: 1196px;
+    background: url('../assest/topbg.jpg') no-repeat top center;
+    background-size: cover;
+  }
+  .first_screen_text {
+    color: #fff;
+    padding-top: 236px;
+    p {
+      font-size: 72px;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+    h3 {
+      font-size: 26px;
+      padding-top: 20px;
+    }
+  }
+.about {
+  padding-top: 360px;
+  .about_intr{
+    color: #616161;
+    font-size: 16px;
+    padding-top: 40px;
+    line-height: 24px;
+  }
+}
+.about_intr_small, .about_power_s_list{
+    display: none;
+  }
+  .about_tit{
+    color: #fff;
+    font-weight:bold;
+    font-size: 32px;
+    padding-bottom: 12px;
+  }
+  .about_en{
+    color: #5b83de;
+    font-size: 18px;
+  }
+.about_power_list {
+  width: 1220px;
+  margin: 0 auto;
+  padding-top: 68px;
+  text-align: justify;
+  text-justify:distribute-all-lines;
+  color: #fff;
+  &:after {
+    width: 100%;
+    height: 0;
+    margin: 0;
+    display: inline-block;
+    overflow: hidden;
+    content: '';
+  }
+  li {
+    width: 390px;
+    height: 392px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: top;
+  }
+}
+.about_team{
+  width: 100%;
+  height: 100%;
+  background: url('../assest/team.jpg') no-repeat center;
+  background-size: cover;
+}
+.about_power{
+  height: 100%;
+  background: url('../assest/power.jpg') no-repeat center;
+  background-size: cover;
+}
+.about_layout{
+  height: 100%;
+  background: url('../assest/layout.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.power_active {
+  width: 100%;
+  height: 100%;
+  background-color: #11295e8f;
+  box-shadow: 0 5px 15px #7b7b7b;
+  // border: 2px solid #5a84df;
+}
+
+.about_list_tit {
+  font-weight:bold;
+  font-size: 42px;
+  padding-bottom: 10px;
+  padding-top: 151px;
+}
+.about_list_dis {
+  font-size: 22px;
+}
+
+.develop {
+  text-align: center;
+  padding-top: 136px;
+
+  .develop_list {
+    width: 822px;
+    margin: 0 auto;
+    padding-top: 68px;
+    display: table;
+    padding-bottom: 40px;
+    li {
+      display: table-cell;
+      vertical-align: top;
+    }
+  }
+  .develop_s_img, .develop_s_list{
+    display: none;
+  }
+  .develop_img{
+    display: block;
+  }
+  .develop_year {
+    color: #5b83de;
+    font-size: 36px;
+    width: 202px;
+    text-align: center;
+    font-weight: bold;
+    border-right: 2px solid #e0e0e0;
+  }
+  .develop_mid {
+    width: 70px;
+    text-align: left;
+    margin-left: -6px;
+  }
+  .develop_circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #5b83de;
+    box-shadow: 0 0 7px #6a6a6a;
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: -7px;
+    background-color: #fff;
+  }
+  .develop_dis{
+    font-size: 14px;
+    line-height: 24px;
+    color: #3a3a3a;
+    text-align: left;
+  }
+  .padBtm40 {
+    padding-bottom: 40px;
+  }
+  .develop_more {
+    color: #a0a0a0;
+    cursor: pointer;
+    &:hover{
+        color: #5b83de;
+    }
+  }
+}
+.develop_tit {
+  color: #0c0c0c;
+}
+
+.business {
+  padding-top: 256px;
+  text-align: center;
+}
+.business_dis {
+  padding-top: 40px;
+  color: #3a3a3a;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.business_logo{
+  width: 922px;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 0;
+  &:after {
+    content: '';
+    display: inline-block;
+    height: 0;
+    width: 100%;
+  }
+  li {
+    display: inline-block;
+    vertical-align: bottom;
+    height: 48px;
+    width: 18%;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+  
+}
+.business_more{
+    padding-top: 40px;
+    color: #a0a0a0;
+    cursor: pointer;
+    &:hover{
+        color: #5b83de;
+    }
+}
+
+.more_logo {
+  padding-top: 68px;
+  color: #616161;
+  font-size: 16px;
+  cursor: pointer;
+  &:hover{
+    color: #5b83de;
+  }
+}
+.more_logo_icon {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url('../assest/more-icon.png') no-repeat center;
+  background-size: contain;
+}
+
+.investment {
+  padding-top: 136px;
+  text-align: center;
+}
+.investment_list {
+width: 922px;
+  margin: 0 auto;
+  text-align: justify;
+  padding-top: 68px;
+  &::after{
+    content: '';
+    display: inline-block;
+    height: 0;
+    width: 100%;
+  }
+  li {
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: center;
+
+  }
+  .investment_bg{
+    width: 182px;
+    height: 182px;
+    border-radius: 50%;
+    background-color: #0c0c0c;
+    cursor: pointer;
+    &:hover{
+        -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 0.8s;
+        animation-duration: 0.8s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+  }
+  @-webkit-keyframes pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  @keyframes pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  .investment_text {
+    font-size: 24px;
+    color: #3a3a3a;
+    padding-top: 40px;
+  }
+  .investment_pre::before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url('../assest/investment_market.png') no-repeat center;
+    background-size: 50%;
+  }
+  .investment_enter::before{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url('../assest/investment_enter.png') no-repeat center;
+    background-size: 50%;
+  }
+  .investment_layout::before{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url('../assest/investment_layout.png') no-repeat center;
+    background-size: 50%;
+  }
+}
+
+  .join {
+    width: 100%;
+    height: 598px;
+    background: url('../assest/join.jpg') no-repeat bottom center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-top: 150px;
+    margin-top: 136px;
+    .join_en {
+      color: #fff;
+    }
+    .join_invent {
+      font-size: 18px;
+      padding-bottom: 60px;
+      padding-top: 100px; 
+    }
+    .join_bold {
+      font-weight: bold;
+      font-size: 48px;
+    }
+  }
+
+  .footer {
+    width: 100%;
+    line-height: 70px;
+    color: #828282;
+    font-size: 12px;
+    background-color: #0c0c0c;
+    div{
+      width: 1220px;
+      margin: 0 auto;
+    }
+  }
+
+  .rotaAll{
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); 	/* IE 9 */
+    -moz-transform:rotate(180deg); 	/* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg);
+  }
+
+  .map_bg {
+    background: url('../assest/mapLeft.jpg') no-repeat left top,
+                url('../assest/mapRight.jpg') no-repeat right bottom;
+    margin-top: -120px;
+  }
+  .business_s_dis, .business_s_box{
+    display: none;
+  }
+
+.business_band_zb{
+    background: url('../assest/logo/ZB_black.jpg') no-repeat center;
+    background-size: contain; 
+    &:hover{
+        background: url('../assest/logo/ZB.jpg') no-repeat center;
+        background-size: contain;         
+    }
+}
+.business_band_biyin{
+    background: url('../assest/logo/biyin_black.jpg') no-repeat center;
+    background-size: contain; 
+    &:hover{
+        background: url('../assest/logo/biyin.jpg') no-repeat center;
+        background-size: contain;   
+    }
+}
+.business_band_leek{
+    background: url('../assest/logo/leek_black.jpg') no-repeat center;
+    background-size: contain;
+    &:hover{
+        background: url('../assest/logo/leek.jpg') no-repeat center;
+        background-size: contain;   
+    }
+}
+.business_band_suanliba{
+    background: url('../assest/logo/suanliba_black.jpg') no-repeat center;
+    background-size: contain;
+    &:hover{
+        background: url('../assest/logo/suanliba.jpg') no-repeat center;
+        background-size: contain;   
+    }
+}
+.business_band_xianggang{
+    background: url('../assest/logo/xianggang_black.jpg') no-repeat center;
+    background-size: contain;
+    &:hover{
+        background: url('../assest/logo/xianggang.jpg') no-repeat center;
+        background-size: contain;   
+    }
+}
+.business_band_shanghai{
+    background: url('../assest/logo/shanghai_black.jpg') no-repeat center;
+    background-size: contain;
+    &:hover{
+        background: url('../assest/logo/shanghai.jpg') no-repeat center;
+        background-size: contain;   
+    }
+}
+.business_band_biwang{
+    background: url('../assest/logo/biwang_black.jpg') no-repeat center;
+    background-size: contain;
+    &:hover{
+        background: url('../assest/logo/biwang.jpg') no-repeat center;
+        background-size: contain;   
+    }
+}
+.business_band_hyper{
+    background: url('../assest/logo/hyper_black.jpg') no-repeat center;
+    background-size: contain;
+    &:hover{
+        background: url('../assest/logo/hyper.jpg') no-repeat center;
+        background-size: contain;   
+    }
+}
+.business_band_hcash{
+    background: url('../assest/logo/hcash_black.jpg') no-repeat center;
+    background-size: contain;
+    &:hover{
+        background: url('../assest/logo/hcash.jpg') no-repeat center;
+        background-size: contain;   
+    }
+}
+
+.business_band_suanli{
+    background: url('../assest/logo/suanli_black.jpg') no-repeat center;
+    background-size: contain;
+    &:hover{
+        background: url('../assest/logo/suanli.jpg') no-repeat center;
+        background-size: contain;   
+    }
+}
+.business_band_qtum{
+    background: url('../assest/logo/qtum_black.jpg') no-repeat center;
+    background-size: contain;
+    &:hover{
+        background: url('../assest/logo/QRUM.jpg') no-repeat center;
+        background-size: contain;   
+    }
+}
+.business_band_qiedalu{
+    background: url('../assest/logo/qiedalu_lack.jpg') no-repeat center;
+    background-size: contain;
+    &:hover{
+        background: url('../assest/logo/qiedalu.jpg') no-repeat center;
+        background-size: contain;   
+    }
+}
+.business_band_name{
+    background: url('../assest/logo/name_black.jpg') no-repeat center;
+    background-size: contain;
+    &:hover{
+        background: url('../assest/logo/name.jpg') no-repeat center;
+        background-size: contain;   
+    }
+}
+.business_band_jnb{
+    background: url('../assest/logo/JNB_black.jpg') no-repeat center;
+    background-size: contain;
+    &:hover{
+        background: url('../assest/logo/JNB.jpg') no-repeat center;
+        background-size: contain;   
+    }
+}
+.business_band_hps{
+    background: url('../assest/logo/HPS_black.jpg') no-repeat center;
+    background-size: contain;
+    &:hover{
+        background: url('../assest/logo/HPS.jpg') no-repeat center;
+        background-size: contain;   
+    }
+}
+.business_band_hbi{
+    background: url('../assest/logo/Hbi_pro_black.jpg') no-repeat center;
+    background-size: contain;
+    &:hover{
+        background: url('../assest/logo/Hbi_pro.jpg') no-repeat center;
+        background-size: contain;   
+    }
+}
+.business_band_dprating{
+    background: url('../assest/logo/DPRating-black.jpg') no-repeat center;
+    background-size: contain;
+    &:hover{
+        background: url('../assest/logo/DPRating.jpg') no-repeat center;
+        background-size: contain;   
+    }
+}
+.business_band_coin{
+    background: url('../assest/logo/CoinTube_black.jpg') no-repeat center;
+    background-size: contain;
+    &:hover{
+        background: url('../assest/logo/CoinTube.jpg') no-repeat center;
+        background-size: contain;   
+    }
+}
+.business_band_clouddex{
+    background: url('../assest/logo/clouddex_black.jpg') no-repeat center;
+    background-size: contain;
+    &:hover{
+        background: url('../assest/logo/clouddex.jpg') no-repeat center;
+        background-size: contain;   
+    }
+}
+.business_band_bitbank{
+    background: url('../assest/logo/bitbank_black.jpg') no-repeat center;
+    background-size: contain;
+    &:hover{
+        background: url('../assest/logo/bitbank.jpg') no-repeat center;
+        background-size: contain;   
+    }
+}
+.business_band_batpool{
+    background: url('../assest/logo/BATPOOL_black.jpg') no-repeat center;
+    background-size: contain;
+    &:hover{
+        background: url('../assest/logo/BATPOOL.jpg') no-repeat center;
+        background-size: contain;   
+    }
+}
+
