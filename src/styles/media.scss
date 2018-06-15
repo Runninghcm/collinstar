@@ -1,5 +1,5 @@
 
-  $navHeight: 100px;
+  $navHeight: 60px;
   $font14: 14px;
 
 
@@ -49,16 +49,16 @@
     }
     h3{
       font-size: 1rem;
-      padding-top: 0.3rem;
+      padding-top: 01rem;
     }
   }
 
   .about {
-    padding-top: 4rem;
+    padding-top: 4.6rem;
     background-color: #fff;
+    margin-top: 0;
     .about_tit {
       color: #171717;
-      padding-bottom: 0;
     }
     .about_power_list,
     .about_intr{
@@ -69,14 +69,14 @@
     display: block;
     color: #616161;
     padding-top: 1.5rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.7;
   }
 
   .about_power_s_list{
     display: block;
     padding: 0 1.5rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     li {
       margin-bottom: 1.2rem;
       padding: 1.5rem;
@@ -89,11 +89,12 @@
     .about_list_s_tit{
       font-size: 1.8rem;
       font-weight: bold;
-      padding-bottom: .2rem;
+      padding-bottom: .5rem;
       padding-top: 1.2rem;
     }
     .about_list_s_txt{
       font-size: .8rem;
+      line-height: 1.5;
     }
     .about_list_s_team{
       background: url('../assest/s_team.jpg') no-repeat left top;
@@ -110,10 +111,8 @@
   }
 
   .develop{
-    padding-top: 50px;
-    .develop_tit{
-      padding-bottom: 0;
-    }
+    padding-top: 80px;
+    margin-top: 0;
     .develop_s_img{
       display: block;
       width: 100%;
@@ -182,6 +181,7 @@
     margin-top: 0;
     .business{
       padding-top: 2rem;
+      margin-top: 0;
     }
     .business_s_top{
       background: url('../assest/mapLeft.jpg') no-repeat left top;
@@ -193,9 +193,6 @@
       background: url('../assest/mapRight.jpg') no-repeat right top;
       background-size: contain;
     }
-    .develop_tit{
-      padding: 0;
-    }
     .business_dis, .business_logo, .more_logo{
       display: none;
     }
@@ -203,6 +200,8 @@
       display: block;
       padding-top: 1.3rem;
       color: #616161;
+      line-height: 1.5;
+      font-size: 0.8rem;
     }
     .business_s_logo {
       font-size: 0;
@@ -280,6 +279,93 @@
       width: 100%;
     }
   }
+
+  .business_band_zb{
+        background: url('../assest/logo/ZB.jpg') no-repeat center;
+        background-size: 90%;         
+
+}
+.business_band_biyin{
+        background: url('../assest/logo/biyin.jpg') no-repeat center;
+        background-size: contain;   
+}
+.business_band_leek{
+        background: url('../assest/logo/leek.jpg') no-repeat center;
+        background-size: contain;   
+}
+.business_band_suanliba{
+        background: url('../assest/logo/suanliba.jpg') no-repeat center;
+        background-size: contain;   
+}
+.business_band_xianggang{
+        background: url('../assest/logo/xianggang.jpg') no-repeat center;
+        background-size: contain;   
+}
+.business_band_shanghai{
+        background: url('../assest/logo/shanghai.jpg') no-repeat center;
+        background-size: contain;   
+}
+.business_band_biwang{
+        background: url('../assest/logo/biwang.jpg') no-repeat center;
+        background-size: contain;   
+}
+.business_band_hyper{
+        background: url('../assest/logo/hyper.jpg') no-repeat center;
+        background-size: contain;   
+}
+.business_band_hcash{
+        background: url('../assest/logo/hcash.jpg') no-repeat center;
+        background-size: contain;   
+}
+
+.business_band_suanli{
+        background: url('../assest/logo/suanli.jpg') no-repeat center;
+        background-size: contain;   
+}
+.business_band_qtum{
+        background: url('../assest/logo/QRUM.jpg') no-repeat center;
+        background-size: contain;   
+}
+.business_band_qiedalu{
+        background: url('../assest/logo/qiedalu.jpg') no-repeat center;
+        background-size: contain;   
+}
+.business_band_name{
+        background: url('../assest/logo/name.jpg') no-repeat center;
+        background-size: contain;   
+}
+.business_band_jnb{
+        background: url('../assest/logo/JNB.jpg') no-repeat center;
+        background-size: contain;   
+}
+.business_band_hps{
+        background: url('../assest/logo/HPS.jpg') no-repeat center;
+        background-size: contain;   
+}
+.business_band_hbi{
+        background: url('../assest/logo/Hbi_pro.jpg') no-repeat center;
+        background-size: contain;   
+}
+.business_band_dprating{
+        background: url('../assest/logo/DPRating.jpg') no-repeat center;
+        background-size: contain;   
+}
+.business_band_coin{
+        background: url('../assest/logo/CoinTube.jpg') no-repeat center;
+        background-size: contain;   
+}
+.business_band_clouddex{
+        background: url('../assest/logo/clouddex.jpg') no-repeat center;
+        background-size: contain;   
+}
+.business_band_bitbank{
+        background: url('../assest/logo/bitbank.jpg') no-repeat center;
+        background-size: contain;   
+}
+.business_band_batpool{
+        background: url('../assest/logo/BATPOOL.jpg') no-repeat center;
+        background-size: contain;   
+}
 }
 
   @media (min-width: 768px) and (max-width: 991px) {
@@ -313,14 +399,6 @@
         padding: 0;
       }
     }
-
-    .develop{
-      padding-top: 300px;
-      .develop_circle{
-        margin-top: 18px;
-      }      
-    }
-
 
   }
 

@@ -25,17 +25,20 @@
 
     </b-navbar>
 
-    <div id="nav-scroller"  class="scroll_body" >
+    <div class="scroll_body" >
       <div class="first_scrren">
       
-        <div class="first_screen_text" id="home">
-          <p>全球顶级</p>
-          <h3>资产管理 和 区块链投资服务企业</h3>        
+        <div class="first_screen_text animated zoomIn" id="home">
+            <p>全球顶级</p>
+            <h3>资产管理 和 区块链投资服务企业</h3>
         </div>
 
         <div class="about" id="about">
-          <p class="about_tit">关于我们</p>
-          <p class="about_en">ABOUT US</p>
+          <div class="model_tit">
+            <p class="about_tit">关于我们</p>
+            <p class="about_en">About us</p>
+          </div>
+          
           <p class="about_intr">科银资本是一家具备澳洲劝他金融服务执照<br>专业于区块链基础建设、数字货币投资与咨询的公司</p>
           <p class="about_intr_small">科银资本是一家具备<br>澳洲劝他金融服务执照专业于<br>区块链基础建设、数字货币投资与咨询的公司</p>
           
@@ -48,11 +51,11 @@
                   >
                     <div v-if="!isShowOne" key="defult">
                       <p class="about_list_tit">团队</p>
-                      <p class="about_list_dis">LOCATION</p>                 
+                      <p class="about_list_dis">Team</p>                 
                     </div>
                     <div v-else class="power_active" key="active">
                       <p class="about_list_tit">团队</p>
-                      <p class="about_list_dis">XXXXXXX</p>                 
+                      <p class="about_list_dis">以跨行业、高学历、多文化背景的团队为支撑的世界级区块链先驱企业</p>                 
                     </div>
                 </transition>
               </div>
@@ -65,11 +68,11 @@
                   >
                     <div v-if="!isShowPower" key="defult">
                       <p class="about_list_tit">实力</p>
-                      <p class="about_list_dis">POWER</p>                 
+                      <p class="about_list_dis">Power</p>                 
                     </div>
                     <div v-else class="power_active" key="active">
-                      <p class="about_list_tit">团队</p>
-                      <p class="about_list_dis">XXXXXXX</p>                 
+                      <p class="about_list_tit">实力</p>
+                      <p class="about_list_dis">澳大利亚唯一一家具有区块链数字货币风投牌照的投资公司</p>                 
                     </div>
                 </transition>
               </div>
@@ -82,18 +85,17 @@
                   >
                     <div v-if="!isShowLayout" key="defult">
                       <p class="about_list_tit">布局</p>
-                      <p class="about_list_dis">GRRAGEMENT</p>                 
+                      <p class="about_list_dis">Business</p>                 
                     </div>  
                     <div v-else class="power_active" key="active">
-                      <p class="about_list_tit">团队</p>
-                      <p class="about_list_dis">XXXXXXX</p>                 
+                      <p class="about_list_tit">布局</p>
+                      <p class="about_list_dis">遍布全球6国15个城市12个细分行业的区块链全产业布局</p>                 
                   </div>
                 </transition>
 
                 <transition name="powerA"
                   enter-class="animated bounce"
                   enter-active-class="animated pulse"
-                  
                   >
                   
                 </transition>
@@ -112,14 +114,16 @@
             </li>
             <li class="about_list_s_layout">
               <p class="about_list_s_tit">布局</p>
-              <p class="about_list_s_txt">澳大利亚唯一一家具有<br>区块链数字货币风投牌照的投资公司</p>
+              <p class="about_list_s_txt">遍布全球6国15个城市12个<br>细分行业的区块链全产业布局</p>
             </li>
           </ul>
         </div>
       </div>
       <div class="develop" id="develop">
-        <p class="about_tit develop_tit">集团发展</p>
-        <p class="about_en">DEVELOPMENT</p>
+        <div class="model_tit">
+          <p class="about_tit develop_tit">集团发展</p>
+          <p class="about_en">Development</p>
+        </div>
 
         <div class="develop_s_img"><img src="../assest/develop.jpg" /></div>
 
@@ -219,7 +223,14 @@
               <p>2017.06：成立上海阔悦科技公司，专注于区块链技术及应用解决方案</p>
 
               <b-collapse id="develop" v-model="developIsShow">
-                <p>XXXXXX</p>
+                <p>2017.07：成立Leekico众筹平台，开展区块链众筹与孵化业务</p>
+                <p>2017.08：与Legend Digital神话科技数字传媒公司达成战略合作</p>
+                <p>2017.09：入股币安(Binance)数字货币交易所 </p>
+                <p>2017.10：收购澳大利亚Hatchstone legal法务咨询公司 2017.10：与Chain of Home、Olympus Labs等众多行业领先者达成战略合作关系 </p>
+                <p>2017.10：投资新疆芯谷云创区块链产业园 </p>
+                <p>2017.11：收购币网（BW集团），开展挖矿业务</p>
+                <p>2017.11：科银资本蒙纳士大学联合实验室成立</p>
+                <p>2017.11： 科银资本旗下HyperPay 项目启动，旨于开通数字货币在各领域的支付通道2017.12：科银资本旗下Blockchain Ventures基金启动，启动加密货币与数字资产基金投资业务</p>
               </b-collapse>
 
               <div class="develop_s_more m-1" 
@@ -243,7 +254,10 @@
               <p>2018.02：科银资本旗下Fintech Review数字传媒公司成立 ，致力于打造区块链媒体行业标杆</p>
               
               <b-collapse id="develop2" v-model="developIsShow2">
-                <p>XXXXXX</p>
+                <p>2018.03：联合成立EOS超级节点WhatEOS </p>
+                <p>2018.04：科银资本香港理工大学联合实验室开幕 2018.05：科银资本入驻火币超级节点 </p>
+                <p>2018.06：收购CoinW数字货币交易所 </p>
+                <p>2018.07：成立科银资本韩国办事处，完善科银资本韩国布局</p>
               </b-collapse>
 
               <div class="develop_s_more m-1" 
@@ -258,16 +272,20 @@
           </ul>
         </div>
 
-        <div class="develop_img"><img src="../assest/develop.jpg" /></div>
+        <!-- <div class="develop_img"><img src="../assest/develop.jpg" /></div> -->
       </div>
 
       <div class="map_bg" id="bussiness">
         <div class="business">
           <div class="business_s_top">
-            <p class="about_tit develop_tit">商业版图</p>
-            <p class="about_en">BUSSINESS MAP</p>
-            <p class="business_dis">遍布全球 6个国家 15个城市 12个t区块链细分行业<br>包括芯片、整机、矿场、矿池、交易所、钱包、借贷、媒体、评级    IM流量入口、合规公募平台、底层链</p>
-            <p class="business_s_dis">遍布全球 6个国家 15个城市 <br> 12个t区块链细分行业<br>包括芯片、整机、矿场、矿池、交易所<br>钱包、借贷、媒体、评级    IM流量入口<br>合规公募平台、底层链</p>            
+
+            <div class="model_tit">
+              <p class="about_tit develop_tit">商业版图</p>
+              <p class="about_en">Bussiness map</p>
+            </div>
+
+            <p class="business_dis">遍布全球 6个国家 15个城市 12个区块链细分行业<br>包括芯片、整机、矿场、矿池、交易所、钱包、借贷、媒体、评级    IM流量入口、合规公募平台、底层链</p>
+            <p class="business_s_dis">遍布全球 6个国家 15个城市 <br> 12个区块链细分行业<br>包括芯片、整机、矿场、矿池、交易所<br>钱包、借贷、媒体、评级    IM流量入口<br>合规公募平台、底层链</p>            
           </div>
 
           <div class="business_s_box">
@@ -300,7 +318,6 @@
               </ul>
             </b-collapse>
             
-
             <div class="develop_s_more m-1" 
               @click="sbuniessIsShow = !sbuniessIsShow"
               aria-controls="sbuniess"
@@ -362,11 +379,14 @@
                 <p >向上收起</p> 
               </div>
             </div>
-        </div>
+        </div> 
 
+        
         <div class="investment" id="investment">
-          <p class="about_tit develop_tit">投资理念和哲学</p>
-          <p class="about_en">INVESTMENT PHILOSOPHY</p>
+          <div class="model_tit">
+            <p class="about_tit develop_tit">投资理念和哲学</p>
+            <p class="about_en">Investment Philosophy</p>
+          </div>
 
           <ul class="investment_list">
             <li>
@@ -382,15 +402,16 @@
               <p class="investment_text">全生态布局</p>
             </li>
           </ul>
-        </div>        
+        </div>       
       </div>
 
-
       <div class="join" id="join">
-        <p class="about_tit">加入我们</p>
-        <p class="about_en join_en">JOIN IN US</p>
+        <div class="model_tit">
+          <p class="about_tit">加入我们</p>
+          <p class="about_en join_en">Join us</p>
+        </div>
 
-        <p class="join_invent">招聘/商务：offical@collinstar.com.cn</p>
+        <p class="join_invent">招聘/商务：official@collinstar.com.cn</p>
         <p class="join_bold">信仰&nbsp&nbsp坚持&nbsp&nbsp专注&nbsp&nbsp专业</p>
       </div>
    </div>
@@ -419,7 +440,6 @@ export default {
       isMoreLogo: false,
       sDevelopIsShow: false,
       sbuniessIsShow: false,
-      
     }
   },
   mounted () {
@@ -438,17 +458,30 @@ export default {
     showMore: (type) => {
       this[type] = !this[type];
     },
+    addClass: (obj, cls) => {
+      if (obj) {
+        var obj_class = obj.className,//获取 class 内容.
+        blank = (obj_class != '') ? ' ' : '',//判断获取到的 class 是否为空, 如果不为空在前面加个'空格'.
+        added = obj_class + blank + cls;//组合原来的 class 和需要添加的 class.
+        obj.className = added;//替换原来的 class.
+      }
+    },
     scrollIntoView (evt) {
       evt.preventDefault()
       const href = evt.target.getAttribute('href')
       const el = href ? document.querySelector(href) : null
+      const tit = el ? el.querySelector('.model_tit') : null 
       if (el) {
         console.log(window.navigator.userAgent);
         let u = window.navigator.userAgent;
         if (!!u.match(/AppleWebKit.*Mobile.*/)||!!u.match(/AppleWebKit/)) {
-          document.body.scrollTop = el.offsetTop + 40;
-          document.documentElement.scrollTop = el.offsetTop + 40;
+          console.log(tit);
+
+          document.body.scrollTop = el.offsetTop;
+          document.documentElement.scrollTop = el.offsetTop;
+          this.addClass(tit, 'animated zoomIn');
         } else {
+          console.log('mobile');
           document.body.scrollTop = el.offsetTop - 50;
           document.documentElement.scrollTop = el.offsetTop - 50;
         }
@@ -459,7 +492,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss">
+<style lang="scss" scoped>
   @import '../styles/home.scss';
   @import '../styles/media.scss';
   
