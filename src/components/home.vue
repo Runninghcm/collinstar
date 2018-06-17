@@ -5,7 +5,7 @@
         
         <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-        <b-navbar-brand href="#" class="logo"></b-navbar-brand>
+        <b-navbar-brand href="#home" @click="scrollIntoView" class="logo"></b-navbar-brand>
 
         <b-collapse is-nav id="nav_collapse">
 
@@ -15,7 +15,7 @@
               <b-nav-item href="#home" @click="scrollIntoView" class="no">首页</b-nav-item>
               <b-nav-item href="#about" @click="scrollIntoView" >关于我们</b-nav-item>
               <b-nav-item href="#develop" @click="scrollIntoView" >集团发展</b-nav-item>
-              <b-nav-item href="#bussiness" @click="scrollIntoView" >商业版图</b-nav-item>
+              <b-nav-item href="#bussiness" @click="scrollIntoView" >投资布局</b-nav-item>
               <b-nav-item href="#investment" @click="scrollIntoView" >投资理念</b-nav-item>
               <b-nav-item href="#join" @click="scrollIntoView" >加入我们</b-nav-item>
             </b-navbar-nav>
@@ -28,9 +28,12 @@
     <div class="scroll_body" >
       <div class="first_scrren">
       
-        <div class="first_screen_text animated zoomIn" id="home">
+        <div class="first_screen_text " id="home">
+          <div class="animated zoomIn">
             <p>全球顶级</p>
-            <h3>资产管理 和 区块链投资服务企业</h3>
+            <h3>资产管理 和 区块链投资服务企业</h3>            
+          </div>
+
         </div>
 
         <div class="about" id="about">
@@ -39,8 +42,8 @@
             <p class="about_en">About us</p>
           </div>
           
-          <p class="about_intr">科银资本是一家具备澳洲劝他金融服务执照<br>专业于区块链基础建设、数字货币投资与咨询的公司</p>
-          <p class="about_intr_small">科银资本是一家具备<br>澳洲劝他金融服务执照专业于<br>区块链基础建设、数字货币投资与咨询的公司</p>
+          <p class="about_intr">科银资本是一家具备澳洲全套金融服务执照<br>专业于区块链基础建设、数字货币投资与咨询的资产管理公司</p>
+          <p class="about_intr_small">科银资本是一家具备澳洲全套金融服务执照<br>专业于区块链基础建设、数字货币投资与咨询的资产管理公司</p>
           
           <ul class="about_power_list">
             <li v-on:mouseenter="isShowOne = true" v-on:mouseleave="isShowOne = false">
@@ -89,7 +92,7 @@
                     </div>  
                     <div v-else class="power_active" key="active">
                       <p class="about_list_tit">布局</p>
-                      <p class="about_list_dis">遍布全球6国15个城市12个细分行业的区块链全产业布局</p>                 
+                      <p class="about_list_dis">遍布全球6个国家、15个城市、12个细分行业的区块链全产业布局</p>                 
                   </div>
                 </transition>
 
@@ -106,7 +109,7 @@
           <ul class="about_power_s_list">
             <li class="about_list_s_team">
               <p class="about_list_s_tit">团队</p>
-              <p class="about_list_s_txt">立足世界的区块链先驱实践企业</p>
+              <p class="about_list_s_txt">以跨行业、高学历、多文化<br>背景的团队为支撑的世界级区块链先驱企业</p>
             </li>
             <li class="about_list_s_power">
               <p class="about_list_s_tit">实力</p>
@@ -114,7 +117,7 @@
             </li>
             <li class="about_list_s_layout">
               <p class="about_list_s_tit">布局</p>
-              <p class="about_list_s_txt">遍布全球6国15个城市12个<br>细分行业的区块链全产业布局</p>
+              <p class="about_list_s_txt">遍布全球6个国家、15个城市<br>12个细分行业的区块链全产业布局</p>
             </li>
           </ul>
         </div>
@@ -158,37 +161,59 @@
               <p class="develop_year develop_s_year">2017</p>
               <p>5月：入股澳大利亚DigitalX区块链咨询服务公司</p>
               <p>6月：成立上海阔悦科技公司，专注于区块链技术及应用解决方案</p>
-            </li>
+              
+                <b-collapse id="sdevelop3" v-model="phoneDevelopIsShow2">
+                  <div>
+                    <p>2017.07：成立Leekico众筹平台，开展区块链众筹与孵化业务</p>
+                    <p>2017.08：与Legend Digital神话科技数字传媒公司达成战略合作</p>
+                    <p>2017.09：入股币安(Binance)数字货币交易所 </p>
+                    <p>2017.10：收购澳大利亚Hatchstone legal法务咨询公司 </p>
+                    <p>2017.10：与Chain of Home、Olympus Labs等众多行业领先者达成战略合作关系 </p>
+                    <p>2017.10：投资新疆芯谷云创区块链产业园 </p>
+                    <p>2017.11：收购币网（BW集团），开展挖矿业务</p>
+                    <p>2017.11：科银资本蒙纳士大学联合实验室成立</p>
+                    <p>2017.11： 科银资本旗下HyperPay 项目启动，旨于开通数字货币在各领域的支付通道</p>
+                    <p>2017.12：科银资本旗下Blockchain Ventures基金启动，启动加密货币与数字资产基金投资业务</p>          
+                  </div>
+                </b-collapse>
+                <div class="develop_s_more m-1" 
+                    @click="phoneDevelopIsShow2 = !phoneDevelopIsShow2"
+                    aria-controls="sdevelop3"
+                    :aria-expanded="phoneDevelopIsShow2 ? 'true' : 'false'">
+                    <p v-if="!phoneDevelopIsShow2">查看更多</p>
+                    <p v-else>向上收起</p>
+                </div>  
+              </li>
           </ul>
 
-          <b-collapse id="sDevelop" v-model="sDevelopIsShow">
-            <ul class="develp_wrapper">
-              <li class="develop_mid">
-                <span class="develop_circle"></span>
-              </li>            
-              <li class="develop_s_right">
-                <p class="develop_year develop_s_year">2018</p>
-                <p>1月：入股澳洲数字货币交易所Claudex</p>
-                <p>2月：科银资本旗下Fintech Review数字传媒公司成立 ，致力于打造区块链媒体行业标杆</p>
-              </li>
-            </ul>
-          </b-collapse>
+          <ul class="develp_wrapper">
+            <li class="develop_mid">
+              <span class="develop_circle"></span>
+            </li>            
+            <li class="develop_s_right">
+              <p class="develop_year develop_s_year">2018</p>
+              <p>1月：入股澳洲数字货币交易所Claudex</p>
+              <p>2月：科银资本旗下Fintech Review数字传媒公司成立 ，致力于打造区块链媒体行业标杆</p>
 
-          <div class="develop_s_more m-1" 
-              @click="sDevelopIsShow = !sDevelopIsShow"
-              aria-controls="sDevelop"
-              :aria-expanded="sDevelopIsShow ? 'true' : 'false'">
-              <div v-if="!sDevelopIsShow">
-                <p >展开全部</p> 
-                <!-- <p v-else>向上收起</p>  -->
-                <p class="develop_s_more_icon"></p>
-              </div>
+              <b-collapse id="sDevelop1" v-model="phoneDevelopIsShow">
+                <div>
+                  <p>2018.03：联合成立EOS超级节点WhatEOS </p>
+                  <p>2018.04：科银资本香港理工大学联合实验室开幕</p>
+                  <p>2018.05：科银资本入驻火币超级节点 </p>
+                  <p>2018.06：收购CoinW数字货币交易所 </p>
+                  <p>2018.07：成立科银资本韩国办事处，完善科银资本韩国布局</p>                  
+                </div>
+              </b-collapse>
 
-              <div v-if="sDevelopIsShow">
-                <p class="develop_s_more_icon rotaAll"></p>
-                <p >向上收起</p> 
+              <div class="develop_s_more m-1" 
+                @click="phoneDevelopIsShow = !phoneDevelopIsShow"
+                aria-controls="sDevelop1"
+                :aria-expanded="phoneDevelopIsShow ? 'true' : 'false'">
+                <p v-if="!phoneDevelopIsShow">查看更多</p> 
+                <p v-else>向上收起</p> 
               </div>
-          </div>
+            </li>
+          </ul>
 
         </div>
 
@@ -226,11 +251,13 @@
                 <p>2017.07：成立Leekico众筹平台，开展区块链众筹与孵化业务</p>
                 <p>2017.08：与Legend Digital神话科技数字传媒公司达成战略合作</p>
                 <p>2017.09：入股币安(Binance)数字货币交易所 </p>
-                <p>2017.10：收购澳大利亚Hatchstone legal法务咨询公司 2017.10：与Chain of Home、Olympus Labs等众多行业领先者达成战略合作关系 </p>
+                <p>2017.10：收购澳大利亚Hatchstone legal法务咨询公司 </p>
+                <p>2017.10：与Chain of Home、Olympus Labs等众多行业领先者达成战略合作关系 </p>
                 <p>2017.10：投资新疆芯谷云创区块链产业园 </p>
                 <p>2017.11：收购币网（BW集团），开展挖矿业务</p>
                 <p>2017.11：科银资本蒙纳士大学联合实验室成立</p>
-                <p>2017.11： 科银资本旗下HyperPay 项目启动，旨于开通数字货币在各领域的支付通道2017.12：科银资本旗下Blockchain Ventures基金启动，启动加密货币与数字资产基金投资业务</p>
+                <p>2017.11：科银资本旗下HyperPay 项目启动，旨于开通数字货币在各领域的支付通道</p>
+                <p>2017.12：科银资本旗下Blockchain Ventures基金启动，启动加密货币与数字资产基金投资业务</p>
               </b-collapse>
 
               <div class="develop_s_more m-1" 
@@ -255,7 +282,8 @@
               
               <b-collapse id="develop2" v-model="developIsShow2">
                 <p>2018.03：联合成立EOS超级节点WhatEOS </p>
-                <p>2018.04：科银资本香港理工大学联合实验室开幕 2018.05：科银资本入驻火币超级节点 </p>
+                <p>2018.04：科银资本香港理工大学联合实验室开幕 </p>
+                <p>2018.05：科银资本入驻火币超级节点 </p>
                 <p>2018.06：收购CoinW数字货币交易所 </p>
                 <p>2018.07：成立科银资本韩国办事处，完善科银资本韩国布局</p>
               </b-collapse>
@@ -280,12 +308,12 @@
           <div class="business_s_top">
 
             <div class="model_tit">
-              <p class="about_tit develop_tit">商业版图</p>
-              <p class="about_en">Bussiness map</p>
+              <p class="about_tit develop_tit">投资布局</p>
+              <p class="about_en">Business map</p>
             </div>
 
-            <p class="business_dis">遍布全球 6个国家 15个城市 12个区块链细分行业<br>包括芯片、整机、矿场、矿池、交易所、钱包、借贷、媒体、评级    IM流量入口、合规公募平台、底层链</p>
-            <p class="business_s_dis">遍布全球 6个国家 15个城市 <br> 12个区块链细分行业<br>包括芯片、整机、矿场、矿池、交易所<br>钱包、借贷、媒体、评级    IM流量入口<br>合规公募平台、底层链</p>            
+            <p class="business_dis">遍布全球 6个国家 15个城市 12个区块链细分行业<br>包括芯片、整机、矿场、矿池、交易所、钱包、借贷、媒体、评级、IM流量入口、合规公募平台、底层链</p>
+            <p class="business_s_dis">遍布全球 6个国家 15个城市 <br> 12个区块链细分行业<br>包括芯片、整机、矿场、矿池、交易所<br>钱包、借贷、媒体、评级、IM流量入口<br>合规公募平台、底层链</p>            
           </div>
 
           <div class="business_s_box">
@@ -385,7 +413,7 @@
         <div class="investment" id="investment">
           <div class="model_tit">
             <p class="about_tit develop_tit">投资理念和哲学</p>
-            <p class="about_en">Investment Philosophy</p>
+            <p class="about_en">Investment philosophy</p>
           </div>
 
           <ul class="investment_list">
@@ -438,8 +466,9 @@ export default {
       developIsShow: false,
       developIsShow2: false,
       isMoreLogo: false,
-      sDevelopIsShow: false,
       sbuniessIsShow: false,
+      phoneDevelopIsShow: false,
+      phoneDevelopIsShow2: false,
     }
   },
   mounted () {
