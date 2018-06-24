@@ -29,9 +29,9 @@
       <div class="first_scrren">
       
         <div class="first_screen_text " id="home">
-          <div class="animated zoomIn">
+          <div class="homeTit animated zoomIn">
             <p>全球顶级</p>
-            <h3>资产管理 和 区块链投资服务企业</h3>            
+            <h3>资产管理和区块链投资服务企业</h3>       
           </div>
 
         </div>
@@ -42,8 +42,8 @@
             <p class="about_en">About us</p>
           </div>
           
-          <p class="about_intr">科银资本是一家具备澳洲全套金融服务执照<br>专业于区块链基础建设、数字货币投资与咨询的资产管理公司</p>
-          <p class="about_intr_small">科银资本是一家具备澳洲全套金融服务执照<br>专业于区块链基础建设、数字货币投资与咨询的资产管理公司</p>
+          <p class="side_text about_intr">科银资本是一家具备澳洲全套金融服务执照<br>专业于区块链基础建设、数字货币投资与咨询的资产管理公司</p>
+          <p class="side_text about_intr_small">科银资本是一家具备澳洲全套金融服务执照<br>专业于区块链基础建设、数字货币投资与咨询的资产管理公司</p>
           
           <ul class="about_power_list">
             <li v-on:mouseenter="isShowOne = true" v-on:mouseleave="isShowOne = false">
@@ -312,39 +312,52 @@
               <p class="about_en">Business map</p>
             </div>
 
-            <p class="business_dis">遍布全球 6个国家 15个城市 12个区块链细分行业<br>包括芯片、整机、矿场、矿池、交易所、钱包、借贷、媒体、评级、IM流量入口、合规公募平台、底层链</p>
-            <p class="business_s_dis">遍布全球 6个国家 15个城市 <br> 12个区块链细分行业<br>包括芯片、整机、矿场、矿池、交易所<br>钱包、借贷、媒体、评级、IM流量入口<br>合规公募平台、底层链</p>            
+            <p class="side_text business_dis">遍布全球6个国家，15个城市，12个区块链细分行业。<br>包括芯片整机、矿池、算力平台、钱包、交易所、ICO平台、基金、媒体、市值管理、区块链实验室等</p>
+            <p class="side_text business_s_dis">遍布全球6个国家，15个城市，<br>12个区块链细分行业。包括芯片整机<br>矿池、算力平台、钱包、交易所ICO平台<br>基金、媒体、市值管理、区块链实验室等</p>            
           </div>
 
           <div class="business_s_box">
             <ul class="business_s_logo">
-              <li class="business_band_zb"></li>
-              <li class="business_band_biyin"></li>
-              <li class="business_band_leek"></li>
-              <li class="business_band_suanliba"></li>
-              <li class="business_band_xianggang"></li>
-              <li class="business_band_shanghai"></li>
-              <li class="business_band_biwang"></li>
-              <li class="business_band_hyper"></li>
-              <li class="business_band_hcash"></li>
+              <li class="business_band_1"></li>
+              <li class="business_band_2"></li>
+              <li class="business_band_3"></li>
+              <li class="business_band_4"></li>
+              <li class="business_band_5"></li>
+              <li class="business_band_6"></li>
+              <li class="business_band_7"></li>
+              <li class="business_band_8"></li>
+              <li class="business_band_9"></li>
             </ul>
             
             <b-collapse id="sbuniess" v-model="sbuniessIsShow">
               <ul class="business_s_logo business_s_logo2">
-                <li class="business_band_suanli"></li>
-                <li class="business_band_qtum"></li>
-                <li class="business_band_qiedalu"></li>
-                <li class="business_band_name"></li>
-                <li class="business_band_jnb"></li>
-                <li class="business_band_hps"></li>
-                <li class="business_band_hbi"></li>
-                <li class="business_band_dprating"></li>
-                <li class="business_band_coin"></li>
-                <li class="business_band_clouddex"></li>
-                <li class="business_band_bitbank"></li>
-                <li class="business_band_batpool"></li>
+                <li class="business_band_10"></li>
+                <li class="business_band_11"></li>
+                <li class="business_band_12"></li>
+                <li class="business_band_13"></li>
+                <li class="business_band_14"></li>
+                <li class="business_band_15"></li>
+                <li class="business_band_16"></li>
+                <li class="business_band_17"></li>
+                <li class="business_band_18"></li>
+                <li class="business_band_19"></li>
+                <li class="business_band_20"></li>
+                <li class="business_band_21"></li>
+                <li class="business_band_22"></li>
+                <li class="business_band_23"></li>
+                <li class="business_band_24"></li>
+                <li class="business_band_25"></li>
+                <li class="business_band_26"></li>
+                <li class="business_band_27"></li>
+                <li class="business_band_28"></li>
+                <li class="business_band_29"></li>
+                <li class="business_band_30"></li>
+                <li class="business_band_31"></li>
+                <li class="business_band_32"></li>
+                <li class="business_band_33"></li>
+                <li class="business_band_34"></li>
               </ul>
-            </b-collapse>
+            </b-collapse> 
             
             <div class="develop_s_more m-1" 
               @click="sbuniessIsShow = !sbuniessIsShow"
@@ -363,50 +376,42 @@
             
           </div>
 
-         
           <ul class="business_logo">
-            <li class="business_band_zb"></li>
-            <li class="business_band_biyin"></li>
-            <li class="business_band_leek"></li>
-            <li class="business_band_suanliba"></li>
-            <li class="business_band_xianggang"></li>
-            <li class="business_band_shanghai"></li>
-            <li class="business_band_biwang"></li>
-            <li class="business_band_hyper"></li>
-            <li class="business_band_hcash"></li>
-            <li class="business_band_suanli"></li>
+            <li class="business_band_1"></li>
+            <li class="business_band_2"></li>
+            <li class="business_band_3"></li>
+            <li class="business_band_4"></li>
+            <li class="business_band_5"></li>
+            <li class="business_band_6"></li>
+            <li class="business_band_7"></li>
+            <li class="business_band_8"></li>
+            <li class="business_band_9"></li>
+            <li class="business_band_10"></li>
+            <li class="business_band_11"></li>
+            <li class="business_band_12"></li>
+            <li class="business_band_13"></li>
+            <li class="business_band_14"></li>
+            <li class="business_band_15"></li>
+            <li class="business_band_16"></li>
+            <li class="business_band_17"></li>
+            <li class="business_band_18"></li>
+            <li class="business_band_19"></li>
+            <li class="business_band_20"></li>
+            <li class="business_band_21"></li>
+            <li class="business_band_22"></li>
+            <li class="business_band_23"></li>
+            <li class="business_band_24"></li>
+            <li class="business_band_25"></li>
+            <li class="business_band_26"></li>
+            <li class="business_band_27"></li>
+            <li class="business_band_28"></li>
+            <li class="business_band_29"></li>
+            <li class="business_band_30"></li>
+            <li class="business_band_31"></li>
+            <li class="business_band_32"></li>
+            <li class="business_band_33"></li>
+            <li class="business_band_34"></li>
           </ul>
-
-          <b-collapse id="moreLogo" v-model="isMoreLogo">
-            <ul class="business_logo">
-              <li class="business_band_qtum"></li>
-              <li class="business_band_qiedalu"></li>
-              <li class="business_band_name"></li>
-              <li class="business_band_jnb"></li>
-              <li class="business_band_hps"></li>
-              <li class="business_band_hbi"></li>
-              <li class="business_band_dprating"></li>
-              <li class="business_band_coin"></li>
-              <li class="business_band_clouddex"></li>
-              <li class="business_band_bitbank"></li>
-              <li class="business_band_batpool"></li>
-            </ul>
-          </b-collapse>
-
-          <div class="business_more" 
-              @click="isMoreLogo = !isMoreLogo"
-              aria-controls="moreLogo"
-              :aria-expanded="isMoreLogo ? 'true' : 'false'">
-              <div v-if="!isMoreLogo">
-                <p >查看更多</p> 
-                <span class="more_logo_icon"></span>
-              </div>
-
-              <div v-if="isMoreLogo">
-                <span class="more_logo_icon rotaAll"></span>
-                <p >向上收起</p> 
-              </div>
-            </div>
         </div> 
 
         
@@ -438,9 +443,9 @@
           <p class="about_tit">加入我们</p>
           <p class="about_en join_en">Join us</p>
         </div>
-
-        <p class="join_invent">招聘/商务：official@collinstar.com.cn</p>
         <p class="join_bold">信仰&nbsp&nbsp坚持&nbsp&nbsp专注&nbsp&nbsp专业</p>
+        <p class="join_invent">招聘：hr@collinstar.com.cn<br>商务：fiona@collinstar.com.cn</p>
+        
       </div>
    </div>
       <footer class="footer">
@@ -472,6 +477,12 @@ export default {
     }
   },
   mounted () {
+    const el = document.querySelector('#home');
+    const homeTit = el.querySelector('.homeTit');
+    const me = this;
+    setTimeout(function() {
+      me.removeClass(homeTit, ' animated zoomIn');
+    }, 1000);
   },
   transitions: {
     bounce: {
@@ -495,22 +506,38 @@ export default {
         obj.className = added;//替换原来的 class.
       }
     },
+    removeClass: (obj, cls) => {
+      if (obj) {
+        var obj_class = obj.className,//获取 class 内容.
+        isMatch = obj_class.search(cls);
+        console.log(isMatch);
+        if (isMatch != -1) {
+          // const re = /${cls}/;
+          var classN = obj_class.replace(cls, '');
+        }
+        obj.className = classN;//替换原来的 class.
+      }
+    },
     scrollIntoView (evt) {
       evt.preventDefault()
       const href = evt.target.getAttribute('href')
       const el = href ? document.querySelector(href) : null
       const tit = el ? el.querySelector('.model_tit') : null 
+      const side_text = el ? el.querySelector('.side_text') : null 
       if (el) {
-        console.log(window.navigator.userAgent);
         let u = window.navigator.userAgent;
         if (!!u.match(/AppleWebKit.*Mobile.*/)||!!u.match(/AppleWebKit/)) {
-          console.log(tit);
 
           document.body.scrollTop = el.offsetTop;
           document.documentElement.scrollTop = el.offsetTop;
-          this.addClass(tit, 'animated zoomIn');
+          if (el.id === 'home') {
+            const homeTit = el.querySelector('.homeTit');
+            this.addClass(homeTit, 'animated zoomIn');
+          } else {
+            this.addClass(tit, 'animated fadeInUp');
+            this.addClass(side_text, 'animated fadeInUp');
+          }
         } else {
-          console.log('mobile');
           document.body.scrollTop = el.offsetTop - 50;
           document.documentElement.scrollTop = el.offsetTop - 50;
         }

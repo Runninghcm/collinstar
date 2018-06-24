@@ -190,7 +190,7 @@
     .business_s_box{
       display: block;
       background: url('../assest/mapRight.jpg') no-repeat right top;
-      background-size: contain;
+      background-size: 14%;
     }
     .business_dis, .business_logo, .more_logo{
       display: none;
@@ -225,6 +225,11 @@
     .business_more{
       display: none;
     }
+    .business_band_31,
+    .business_band_32,
+    .business_band_33{
+      margin-right: 0;
+    }
   }
 
   .investment{
@@ -256,18 +261,21 @@
 
   .join{
     margin-top: 3rem;
-    padding-top: 2.8rem;
+    padding-top: 3.8rem;
+    padding-bottom: 2rem;
     height: auto;
-    background: url('../assest/s_join.jpg') no-repeat top center;
+    background: url('../assest/join.jpg') no-repeat top center;
     background-size: cover;
     .join_invent{
-      padding-top: 3.8rem;
-      font-size: 0.9rem;
+      padding-top: 0;
+      font-size: 0.7rem;
       padding-bottom: 1.5rem;
+      line-height: 20px;
     }
     .join_bold{
       font-size: 1.2rem;
-      padding-bottom: 4rem;
+      padding-bottom: 1.4rem;
+      padding-top: 1.5rem;
     }
   }
 
@@ -278,93 +286,6 @@
       width: 100%;
     }
   }
-
-  .business_band_zb{
-        background: url('../assest/logo/ZB.jpg') no-repeat center;
-        background-size: 90%;         
-
-}
-.business_band_biyin{
-        background: url('../assest/logo/biyin.jpg') no-repeat center;
-        background-size: contain;   
-}
-.business_band_leek{
-        background: url('../assest/logo/leek.jpg') no-repeat center;
-        background-size: contain;   
-}
-.business_band_suanliba{
-        background: url('../assest/logo/suanliba.jpg') no-repeat center;
-        background-size: contain;   
-}
-.business_band_xianggang{
-        background: url('../assest/logo/xianggang.jpg') no-repeat center;
-        background-size: contain;   
-}
-.business_band_shanghai{
-        background: url('../assest/logo/shanghai.jpg') no-repeat center;
-        background-size: contain;   
-}
-.business_band_biwang{
-        background: url('../assest/logo/biwang.jpg') no-repeat center;
-        background-size: contain;   
-}
-.business_band_hyper{
-        background: url('../assest/logo/hyper.jpg') no-repeat center;
-        background-size: contain;   
-}
-.business_band_hcash{
-        background: url('../assest/logo/hcash.jpg') no-repeat center;
-        background-size: contain;   
-}
-
-.business_band_suanli{
-        background: url('../assest/logo/suanli.jpg') no-repeat center;
-        background-size: contain;   
-}
-.business_band_qtum{
-        background: url('../assest/logo/QRUM.jpg') no-repeat center;
-        background-size: contain;   
-}
-.business_band_qiedalu{
-        background: url('../assest/logo/qiedalu.jpg') no-repeat center;
-        background-size: contain;   
-}
-.business_band_name{
-        background: url('../assest/logo/name.jpg') no-repeat center;
-        background-size: contain;   
-}
-.business_band_jnb{
-        background: url('../assest/logo/JNB.jpg') no-repeat center;
-        background-size: contain;   
-}
-.business_band_hps{
-        background: url('../assest/logo/HPS.jpg') no-repeat center;
-        background-size: contain;   
-}
-.business_band_hbi{
-        background: url('../assest/logo/Hbi_pro.jpg') no-repeat center;
-        background-size: contain;   
-}
-.business_band_dprating{
-        background: url('../assest/logo/DPRating.jpg') no-repeat center;
-        background-size: contain;   
-}
-.business_band_coin{
-        background: url('../assest/logo/CoinTube.jpg') no-repeat center;
-        background-size: contain;   
-}
-.business_band_clouddex{
-        background: url('../assest/logo/clouddex.jpg') no-repeat center;
-        background-size: contain;   
-}
-.business_band_bitbank{
-        background: url('../assest/logo/bitbank.jpg') no-repeat center;
-        background-size: contain;   
-}
-.business_band_batpool{
-        background: url('../assest/logo/BATPOOL.jpg') no-repeat center;
-        background-size: contain;   
-}
 }
 
   @media (min-width: 768px) and (max-width: 991px) {

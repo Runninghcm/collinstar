@@ -20,13 +20,11 @@ $font14: 14px;
     margin: 0 auto;
   }
   .logo {
-    height: 35px;
+    height: 66px;
     width: 160px;
     background: url('../assest/logo.png') no-repeat center left;
     background-size: contain;
     display: inline-block;
-    margin-top: 13px;
-    margin-bottom: 13px;
   }
   .nav_right{
     float: right;
@@ -71,10 +69,12 @@ $font14: 14px;
       font-size: 72px;
       letter-spacing: 2px;
       font-weight: bold;
+      letter-spacing: 5px;
     }
     h3 {
       font-size: 26px;
       padding-top: 20px;
+      letter-spacing: 5px;
     }
   }
 .about {
@@ -216,10 +216,11 @@ $font14: 14px;
     padding-bottom: 40px;
   }
   .develop_more {
-    color: #a0a0a0;
+    // color: #a0a0a0;
+    color: #5b83de;
     cursor: pointer;
     &:hover{
-        color: #5b83de;
+        font-weight: bold;
     }
   }
 }
@@ -244,12 +245,12 @@ $font14: 14px;
   margin: 0 auto;
   text-align: justify;
   font-size: 0;
-  &:after {
-    content: '';
-    display: inline-block;
-    height: 0;
-    width: 100%;
-  }
+  // &:after {
+  //   content: '';
+  //   display: inline-block;
+  //   height: 0;
+  //   width: 100%;
+  // }
   li {
     display: inline-block;
     vertical-align: bottom;
@@ -257,6 +258,8 @@ $font14: 14px;
     width: 18%;
     margin-top: 50px;
     cursor: pointer;
+    box-shadow: 0 0 6px #1c1c1c4d;
+    padding: 5px;
   }
   
 }
@@ -389,24 +392,26 @@ width: 922px;
 
   .join {
     width: 100%;
-    height: 598px;
+    height: 610px;
     background: url('../assest/join.jpg') no-repeat bottom center;
     background-size: cover;
     text-align: center;
     color: #fff;
     padding-top: 150px;
-    margin-top: 136px;
+    margin-top: 80px;
     .join_en {
       color: #fff;
     }
     .join_invent {
       font-size: 18px;
       padding-bottom: 60px;
-      padding-top: 100px; 
+      padding-top: 59px; 
+      line-height: 30px;
     }
     .join_bold {
       font-weight: bold;
       font-size: 48px;
+      padding-top: 60px;
     }
   }
 
@@ -439,173 +444,315 @@ width: 922px;
     display: none;
   }
 
-.business_band_zb{
-    background: url('../assest/logo/ZB_black.jpg') no-repeat center;
-    background-size: contain; 
-    &:hover{
-        background: url('../assest/logo/ZB.jpg') no-repeat center;
-        background-size: contain;         
-    }
+.business_band_1{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/1.png') no-repeat center;
+  background-size: contain;}
 }
-.business_band_biyin{
-    background: url('../assest/logo/biyin_black.jpg') no-repeat center;
-    background-size: contain; 
-    &:hover{
-        background: url('../assest/logo/biyin.jpg') no-repeat center;
-        background-size: contain;   
-    }
+.business_band_2{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/2.png') no-repeat center;
+  background-size: contain;}
 }
-.business_band_leek{
-    background: url('../assest/logo/leek_black.jpg') no-repeat center;
-    background-size: contain;
-    &:hover{
-        background: url('../assest/logo/leek.jpg') no-repeat center;
-        background-size: contain;   
-    }
+.business_band_3{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/3.png') no-repeat center;
+  background-size: contain;}
 }
-.business_band_suanliba{
-    background: url('../assest/logo/suanliba_black.jpg') no-repeat center;
-    background-size: contain;
-    &:hover{
-        background: url('../assest/logo/suanliba.jpg') no-repeat center;
-        background-size: contain;   
-    }
+.business_band_4{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/4.png') no-repeat center;
+  background-size: contain;}
 }
-.business_band_xianggang{
-    background: url('../assest/logo/xianggang_black.jpg') no-repeat center;
-    background-size: contain;
-    &:hover{
-        background: url('../assest/logo/xianggang.jpg') no-repeat center;
-        background-size: contain;   
-    }
+.business_band_5{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/5.png') no-repeat center;
+  background-size: contain;}
 }
-.business_band_shanghai{
-    background: url('../assest/logo/shanghai_black.jpg') no-repeat center;
-    background-size: contain;
-    &:hover{
-        background: url('../assest/logo/shanghai.jpg') no-repeat center;
-        background-size: contain;   
-    }
+.business_band_6{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/6.png') no-repeat center;
+  background-size: contain;}
 }
-.business_band_biwang{
-    background: url('../assest/logo/biwang_black.jpg') no-repeat center;
-    background-size: contain;
-    &:hover{
-        background: url('../assest/logo/biwang.jpg') no-repeat center;
-        background-size: contain;   
-    }
+.business_band_7{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/7.png') no-repeat center;
+  background-size: contain;}
 }
-.business_band_hyper{
-    background: url('../assest/logo/hyper_black.jpg') no-repeat center;
-    background-size: contain;
-    &:hover{
-        background: url('../assest/logo/hyper.jpg') no-repeat center;
-        background-size: contain;   
-    }
+.business_band_8{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/8.png') no-repeat center;
+  background-size: contain;}
 }
-.business_band_hcash{
-    background: url('../assest/logo/hcash_black.jpg') no-repeat center;
-    background-size: contain;
-    &:hover{
-        background: url('../assest/logo/hcash.jpg') no-repeat center;
-        background-size: contain;   
-    }
+.business_band_9{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/9.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_10{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/10.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_11{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/11.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_12{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/12.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_13{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/13.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_14{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/14.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_15{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/15.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_16{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/16.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_17{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/17.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_18{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/18.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_19{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/19.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_20{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/20.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_21{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/21.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_22{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/22.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_23{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/23.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_24{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/24.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_25{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/25.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_26{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/26.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_27{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/27.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_28{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/28.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_29{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/29.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_30{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/30.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_31{
+  margin-right: 23px;
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/31.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_32{
+  margin-right: 23px;
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/32.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_33{
+  margin-right: 23px;
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/33.png') no-repeat center;
+  background-size: contain;}
+}
+.business_band_34{
+  &:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+  background: url('../assest/logo/34.png') no-repeat center;
+  background-size: contain;
+}
 }
 
-.business_band_suanli{
-    background: url('../assest/logo/suanli_black.jpg') no-repeat center;
-    background-size: contain;
-    &:hover{
-        background: url('../assest/logo/suanli.jpg') no-repeat center;
-        background-size: contain;   
-    }
-}
-.business_band_qtum{
-    background: url('../assest/logo/qtum_black.jpg') no-repeat center;
-    background-size: contain;
-    &:hover{
-        background: url('../assest/logo/QRUM.jpg') no-repeat center;
-        background-size: contain;   
-    }
-}
-.business_band_qiedalu{
-    background: url('../assest/logo/qiedalu_lack.jpg') no-repeat center;
-    background-size: contain;
-    &:hover{
-        background: url('../assest/logo/qiedalu.jpg') no-repeat center;
-        background-size: contain;   
-    }
-}
-.business_band_name{
-    background: url('../assest/logo/name_black.jpg') no-repeat center;
-    background-size: contain;
-    &:hover{
-        background: url('../assest/logo/name.jpg') no-repeat center;
-        background-size: contain;   
-    }
-}
-.business_band_jnb{
-    background: url('../assest/logo/JNB_black.jpg') no-repeat center;
-    background-size: contain;
-    &:hover{
-        background: url('../assest/logo/JNB.jpg') no-repeat center;
-        background-size: contain;   
-    }
-}
-.business_band_hps{
-    background: url('../assest/logo/HPS_black.jpg') no-repeat center;
-    background-size: contain;
-    &:hover{
-        background: url('../assest/logo/HPS.jpg') no-repeat center;
-        background-size: contain;   
-    }
-}
-.business_band_hbi{
-    background: url('../assest/logo/Hbi_pro_black.jpg') no-repeat center;
-    background-size: contain;
-    &:hover{
-        background: url('../assest/logo/Hbi_pro.jpg') no-repeat center;
-        background-size: contain;   
-    }
-}
-.business_band_dprating{
-    background: url('../assest/logo/DPRating-black.jpg') no-repeat center;
-    background-size: contain;
-    &:hover{
-        background: url('../assest/logo/DPRating.jpg') no-repeat center;
-        background-size: contain;   
-    }
-}
-.business_band_coin{
-    background: url('../assest/logo/CoinTube_black.jpg') no-repeat center;
-    background-size: contain;
-    &:hover{
-        background: url('../assest/logo/CoinTube.jpg') no-repeat center;
-        background-size: contain;   
-    }
-}
-.business_band_clouddex{
-    background: url('../assest/logo/clouddex_black.jpg') no-repeat center;
-    background-size: contain;
-    &:hover{
-        background: url('../assest/logo/clouddex.jpg') no-repeat center;
-        background-size: contain;   
-    }
-}
-.business_band_bitbank{
-    background: url('../assest/logo/bitbank_black.jpg') no-repeat center;
-    background-size: contain;
-    &:hover{
-        background: url('../assest/logo/bitbank.jpg') no-repeat center;
-        background-size: contain;   
-    }
-}
-.business_band_batpool{
-    background: url('../assest/logo/BATPOOL_black.jpg') no-repeat center;
-    background-size: contain;
-    &:hover{
-        background: url('../assest/logo/BATPOOL.jpg') no-repeat center;
-        background-size: contain;   
-    }
-}
 
