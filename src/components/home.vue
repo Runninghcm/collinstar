@@ -30,8 +30,8 @@
       
         <div class="first_screen_text " id="home">
           <div class="homeTit animated zoomIn">
-            <p>全球顶级</p>
-            <h3>资产管理和区块链投资服务企业</h3>       
+            <p>科银资本</p>
+            <h3>遍布全球6个国家、15个城市、布局12个区块链细分行业</h3>       
           </div>
 
         </div>
@@ -444,7 +444,9 @@
           <p class="about_en join_en">Join us</p>
         </div>
         <p class="join_bold">信仰&nbsp&nbsp坚持&nbsp&nbsp专注&nbsp&nbsp专业</p>
-        <p class="join_invent">招聘：hr@collinstar.com.cn<br>商务：fiona@collinstar.com.cn</p>
+        <p class="join_invent">招聘：hr@collinstar.com.cn
+          <!-- <br>商务：fiona@collinstar.com.cn -->
+        </p>
         
       </div>
    </div>

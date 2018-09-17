@@ -20,7 +20,7 @@ $font14: 14px;
     margin: 0 auto;
   }
   .logo {
-    height: 66px;
+    height: 47px;
     width: 160px;
     background: url('../assest/logo.png') no-repeat center left;
     background-size: contain;
@@ -63,8 +63,8 @@ $font14: 14px;
     background-size: cover;
   }
   .first_screen_text {
-    color: #fff;
-    padding-top: 236px;
+    color: #e6e6e6;
+    padding-top: 225px;
     p {
       font-size: 72px;
       letter-spacing: 2px;
@@ -72,9 +72,10 @@ $font14: 14px;
       letter-spacing: 5px;
     }
     h3 {
-      font-size: 26px;
-      padding-top: 20px;
+      font-size: 22px;
+      padding-top: 16px;
       letter-spacing: 5px;
+      line-height: 27px;
     }
   }
 .about {
@@ -97,7 +98,7 @@ $font14: 14px;
     padding-bottom: 0;
   }
   .about_en{
-    color: #5b83de;
+    color: #616161;
     font-size: 18px;
   }
 .about_power_list {
